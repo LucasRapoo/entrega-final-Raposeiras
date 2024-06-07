@@ -544,47 +544,47 @@ input[type=submit] {
 
 /* cortes */
 
-.fotos { 
-    .grid {
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px 20px;
-    grid-template-areas: 
-        "foto2 foto1 foto3"
-        "foto4 foto1 foto5"
-        ". . .";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; /* Puedes ajustar este valor según prefieras */
     width: 100vw;
-    height: 100vh;
-    padding: 20px;
+    height: auto;
     box-sizing: border-box;
+    padding: 10px; /* Puedes ajustar este valor según prefieras */
 }
 
-.video {
+.grid-item {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    border-radius: 8px; /* Puedes ajustar o eliminar según prefieras */
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+}
+
+.grid-item img{
+    width: 100%;
+    height: auto;
+}
+
+.grid-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    object-fit: contain; /* Asegura que la imagen se ajuste y cubra el contenedor */
+    border-radius: 8px; /* Mantén el borde redondeado */
 }
 
-.foto-1 {
-    grid-area: foto-1;
+.grow img {
+    transition: 1s ease;
 }
-.foto2 {
-    grid-area: foto-2;
-}
-.foto3 {
-    grid-area: foto-3;
-}
-.foto4 {
-    grid-area: foto-4;
-}
-.foto5 {
-    grid-area: foto-5;
-} 
 
-.container-nosotros{
-    color: white;
+.grow img:hover {
+    -webkit-transform: scale(1.014);
+    -ms-transform: scale(1.014);
+    transform: scale(1.014);
+    transition: 1s ease;
 }
