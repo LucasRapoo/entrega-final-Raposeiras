@@ -1,0 +1,590 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+/*********** reset ***********/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: black;
+}
+main{
+    background-color: black;
+}
+/*********** header  ***********/
+
+header {
+    background-color: #000000;
+    padding-bottom: .9375rem;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    border-bottom: .0625rem solid white;
+}
+
+@media (max-width :425px) {
+    .navbar ul li {
+        display: none;
+    }
+}
+
+.navbar {
+    border-bottom: 0.0625rem solid white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: .625rem 3%;
+    align-items: center;
+}
+
+.navbar li {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-right: .0625rem solid white;
+    border-left: .0625rem solid white;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+}
+
+/*********** main ***********/
+
+.button-asiento {
+    position: absolute;
+    height: 5rem;
+    width: 20%;
+    line-height: 5rem;
+    text-transform: uppercase;
+    border: none;
+    margin: 1.25rem 25%;
+    color: white;
+    text-shadow: 0 0 .625rem red;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.button-asiento:hover {
+    transform: scale(1.5);
+    /* Agranda el botón ligeramente */
+}
+
+.asiento-fondo {
+    height: 75rem;
+    width: 56%;
+    margin: 1.25rem 25%;
+    background-image: url(../assets/img/toma-asiento.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*********** footer ***********/
+
+footer {
+    background-color: black;
+}
+
+.footer-distributed {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.0);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* footer logo */
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: rgb(219, 3, 3);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: rgb(219, 3, 3);
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* responsive footer */
+@media (max-width: 880px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+}
+
+/* contactos */
+
+/* main de inicio */
+
+.fondo {
+    background-image: url(../assets/img/toma-asiento.jpg);
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el fondo */
+    background-position: center;
+    /* Centra la imagen */
+    height: 100vh;
+    /* Hace que el fondo cubra toda la ventana */
+    position: relative;
+    /* Necesario para el posicionamiento absoluto del contenido */
+}
+
+.contenido-superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centra el contenido */
+    color: gray;
+    /* Color del texto */
+    text-align: center;
+    /* Centra el texto */
+}
+
+.mi-boton {
+    padding: 1.4rem 2.5rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: .625rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    /* Espacio superior */
+}
+
+.mi-boton:hover {
+    background-color: darkred;
+    transform: scale(1.2);
+}
+
+
+/* agendas main */
+
+.info-agenda {
+    color: white;
+    background-color: black;
+    margin: .9375rem 0;
+    padding-bottom: .9375rem;
+
+}
+
+.container-calendar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: url("../assets/img/bannner-mbs-white.jpg") no-repeat center / cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: inherit;
+        filter: blur(10px);
+    }
+}
+
+.calendar {
+    position: relative;
+    width: 300px;
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px rgba(#000, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.calendar__picture {
+    position: relative;
+    height: 200px;
+    padding: 20px;
+    color: #fff;
+    background: #262626 url("../assets/img/bannner-mbs-white.jpg") no-repeat center / cover;
+    text-shadow: 0 2px 2px rgba(#000, 0.2);
+    box-sizing: border-box;
+
+    &::before {
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(to top, rgba(#000, 0.25), rgba(#000, 0.1));
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    h3 {
+        margin: 0;
+        font-weight: 500;
+    }
+}
+
+.calendar__date {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.calendar__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    font-weight: 600;
+    color: red;
+
+}
+
+.calendar__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    color: white;
+
+}
+
+
+/* Estilos para inputs */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* Estilos para el contenedor/section de contacto */
+.container {
+
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: black;
+    padding: 10px;
+
+    /* Estilos para columnas dentro del contenedor */
+    .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+
+    }
+
+    .row {
+        --bs-gutter-x: 0 !important;
+    }
+
+    /* Limpiar floats después de las columnas */
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    /* Proporción 16:9 para mantener la relación de aspecto del mapa */
+}
+
+.map-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    #mapa {
+        height: 200px;
+    }
+}
+
+/* // Diseño responsive: cuando la pantalla es menor a 600px de ancho, apilar las columnas una encima de la otra en lugar de al lado */
+@media screen and (max-width: 600px) {
+
+    .container .column,
+    .container input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* mnenuburguer */
+
+@media (max-width : 2560px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media(max-width :425px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+.navbar {
+    position: relative;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+
+/* cortes */
+
+.fotos { 
+    .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: 
+        "foto2 foto1 foto3"
+        "foto4 foto1 foto5"
+        ". . .";
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+}
+
+.foto-1 {
+    grid-area: foto-1;
+}
+.foto2 {
+    grid-area: foto-2;
+}
+.foto3 {
+    grid-area: foto-3;
+}
+.foto4 {
+    grid-area: foto-4;
+}
+.foto5 {
+    grid-area: foto-5;
+} 
+
+.container-nosotros{
+    color: white;
+}
